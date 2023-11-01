@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"  ></script> 
+
+/* 要再確認一下這個檔案及110105page */
+
+<style>
+    * {box-sizing: border-box;}
+    [class *="col-"]{width:100%; float:left; padding:20px;} 
+    /*tablet*/
+
+    @media only screen and (min-width:992px){
+        .col-t-1{width:8.33%;}
+        .col-t-2{width:16.67%;}
+        .col-t-3{width:25.00%;}
+        .col-t-4{width:33.33%;}
+        .col-t-5{width:41.67%;}
+        .col-t-6{width:50%;}
+        .col-t-7{width:58.33%;}
+        .col-t-8{width:66.67%;}
+        .col-t-9{width:75.00%;}
+        .col-t-10{width:83.33%;}
+        .col-t-11{width:91.67%;}
+        .col-t-12{width:100.00%;}
+        }
+
+/*PC , desktop*/
+    @media only screen and (min-width:1200px){
+        .col-d-1{width:8.33%;}
+        .col-d-2{width:16.67%;}
+        .col-d-3{width:25.00%;}
+        .col-d-4{width:33.33%;}
+        .col-d-5{width:41.67%;}
+        .col-d-6{width:50.00%;}
+        .col-d-7{width:58.33%;}
+        .col-d-8{width:66.67%;}
+        .col-d-9{width:75.00%;}
+        .col-d-10{width:83.33%;}
+        .col-d-11{width:91.67%;}
+        .col-d-12{width:100.00%;}
+        }
+
+
+</style>
+</head>
+</html>
