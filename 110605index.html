@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+
+
+    <script src="js/bootstrap.bundle.min.js"  ></script> 
+
+
+    <style>
+        .navbar{background-color: var(--bs-code-color)!important;}
+        .nav-link{color:lightyellow!important;}
+        .navbar-brand{color:var(--bs-warning)}
+        .nav-link:hover{color: darkblue !important;}
+        .active{color: lightseagreen!important;
+                border-bottom: 4px blue solid;
+                }
+        .dropdown-menu{background-color: mediumseagreen;}
+
+        .navbar-toggler{border:none;}
+        .navbar-toggler-icon{background-image:url("images/coffee//menu-icon2.png");}
+        header{background-image:url(images/coffee/coffee06.jpg); background-size:cover;
+        color:palevioletred;height:25vh;justify-content:center;align-items:center;display: flex;}
+        /* --bs-warning */
+
+
+        .bg-body-tertiary{
+            background-image:url(images/coffee/coffee08.jpg);background-size:cover;color:pink;
+        }
+        
+        header .btn{background-color:palevioletred;font-weight:bold; }
+        
+        main .btn{border:0.1rem solid palevioletred}
+        main .btn:hover{border:0.1rem solid palevioletred;background-color:palevioletred;}
+        main {margin-top:80px;}
+        audio{border-radius: 50%;border:0.1rem solid pink}
+        #myMusic{margin-top:1rem;}
+ 
+    </style>
+</head>
+
+<body>
+
+    <div class="container">     
+
+
+        <nav class="navbar navbar-expand-lg bg-light sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Cafe Time</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myMenu" aria-controls="myMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Drinks</a></li>
+                      <li><a class="dropdown-item" href="#">Beans</a></li>
+                      <li><a class="dropdown-item" href="#">Equipments</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">About Tea</a></li>
+                      <li><a class="dropdown-item" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" action="https://www.google.com/search?" >
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <header> 
+          <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold"></h1>
+              <p class="col-md-8 fs-4">咖啡的來源已無從稽考。諸多傳說之一指咖啡原產於衣索比亞（Ethiopia）西南部的咖法省高原地區，據說是一位牧羊人發現羊吃了一種植物後，變得非常興奮活潑，因此發現了咖啡。</p>
+             
+             
+                <!-- Button trigger modal -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    咖啡買一送一
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">City Cafe現正促銷中</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                            <p>即日起至11/31，精品美式及精品拿鐵買一送一!</p>
+                            <img src="images/coffee/Coffee.jpg">
+                            </div>
+
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉視窗</button>
+                            <button type="button" class="btn btn-primary">手刀購買</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+          </div>
+
+        </header>
+
+        <main>
+        main
+        </main>
+    </div>
+</body>
+
+</html>

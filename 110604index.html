@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+
+
+    <script src="js/bootstrap.bundle.min.js"  ></script> 
+
+
+    <style>
+        .navbar{background-color: var(--bs-code-color)!important;}
+        .nav-link{color:lightyellow!important;}
+        .navbar-brand{color:var(--bs-warning)}
+        .nav-link:hover{color: darkblue !important;}
+        .active{color: lightseagreen!important;
+                border-bottom: 4px blue solid;
+                }
+        .dropdown-menu{background-color: mediumseagreen;}
+
+        .navbar-toggler{border:none;}
+        .navbar-toggler-icon{background-image:url("images/coffee//menu-icon2.png");}
+        header{background-image:url(images/coffee/coffee06.jpg); background-size:cover;
+        color:palevioletred;height:25vh;justify-content:center;align-items:center;display: flex;}
+        /* --bs-warning */
+
+
+        .bg-body-tertiary{
+            background-image:url(images/coffee/coffee08.jpg);background-size:cover;color:pink;
+        }
+        
+        header .btn{background-color:palevioletred;font-weight:bold; }
+        
+        main .btn{border:0.1rem solid palevioletred}
+        main .btn:hover{border:0.1rem solid palevioletred;background-color:palevioletred;}
+        main {margin-top:80px;}
+        audio{border-radius: 50%;border:0.1rem solid pink}
+        #myMusic{margin-top:1rem;}
+ 
+    </style>
+</head>
+
+<body>
+
+    <div class="container">     
+
+
+        <nav class="navbar navbar-expand-lg bg-light sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Cafe Time</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myMenu" aria-controls="myMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Drinks</a></li>
+                      <li><a class="dropdown-item" href="#">Beans</a></li>
+                      <li><a class="dropdown-item" href="#">Equipments</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">About Tea</a></li>
+                      <li><a class="dropdown-item" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" action="https://www.google.com/search?" >
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <header> 
+          <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold"></h1>
+              <p class="col-md-8 fs-4">咖啡的來源已無從稽考。諸多傳說之一指咖啡原產於衣索比亞（Ethiopia）西南部的咖法省高原地區，據說是一位牧羊人發現羊吃了一種植物後，變得非常興奮活潑，因此發現了咖啡。</p>
+             
+             
+                <!-- Button trigger modal -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    咖啡買一送一
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">City Cafe現正促銷中</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                            <p>即日起至11/31，精品美式及精品拿鐵買一送一!</p>
+                            <img src="images/coffee/Coffee.jpg">
+                            </div>
+
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉視窗</button>
+                            <button type="button" class="btn btn-primary">手刀購買</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+          </div>
+
+        </header>
+
+        <main>
+        <div class="row">
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-12 border">
+
+                <div class="d-grid gap-2" role="group" aria-label="Vertical button group">
+                    <button type="button" class="btn">美式咖啡</button>
+                    <button type="button" class="btn">義式咖啡</button>
+                    <button type="button" class="btn">卡布奇諾</button>
+                    <button type="button" class="btn">抹茶拿鐵</button>
+                    
+                    
+                </div>
+                <div id="myMusic">
+                    <audio controls=""><source src="sounds/baha.mp3" type="audio/mpeg"></audio>
+                </div>
+
+                <div id="myVideo">
+                    <video controls="" style="width:100%;"><source src="videos/coffee.mp4" type="video/mp4"></video>
+                    </div>
+                
+                <div class="ratio ratio-16x9">
+                    <iframe style="border-radius:20px;" src="https://www.youtube.com/embed/PTaTsjo16k8?si=lxgq6BJw9r0Nx426" title="YouTube video player"  allowfullscreen></iframe>
+                </div>
+            
+            
+            </div>
+
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="images/coffee/arabica.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">阿拉比卡咖啡(Arabica coffee)</h5>
+                  <p class="card-text">原產於東非伊索比亞南部的阿比西 尼亞高原，現今沿海尚有野生種。</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="images/coffee/robusta.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">羅布斯塔咖啡(Robusta coffee)</h5>
+                  <p class="card-text">羅布斯塔咖啡屬於剛果咖啡的突變 種，原產於西非剛果，本種有缺乏香氣之 憾，苦味較強，酸味不足。</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            
+        </div>
+
+        <div class="col-xxl-3 col-xl-3 col-lg-12 col-md-12 col-sm-12">
+            <picture>
+                <source srcset="images/coffee/cup4.png" media="(max-width:991px)">
+                <source srcset="images/coffee/cup5.png" media="(max-width:1199px)">
+                <img src="images/coffee/Coffee.jpg" class="img-fluid">
+            </picture>
+            
+        </div>
+        </main>
+    </div>
+</body>
+
+</html>
