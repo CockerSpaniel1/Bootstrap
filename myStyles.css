@@ -1,0 +1,30 @@
+.navbar{background-color: var(--bs-code-color)!important;}
+.navbar .nav-link{color:lightyellow;}
+.navbar .nav-link:hover{color: black !important;}
+
+.navbar-brand{color:var(--bs-warning)}
+.active{color: darkblue !important;
+        font-weight:bold;
+        border-bottom: 4px darkblue solid;
+        padding-bottom: 0;
+        }
+.dropdown-menu{background-color: lightpink;}
+
+.navbar-toggler{border:none;}
+.navbar-toggler-icon{background-image:url("images/coffee//menu-icon2.png");}
+
+
+.bg-body-tertiary{
+    background-image:url(images/coffee/coffee08.jpg);background-size:cover;color:pink;
+}
+
+header .btn{background-color:palevioletred;font-weight:bold; }
+header .btn:hover{border:3px solid palevioletred ;font-weight:bold; }
+
+.nav-tabs .nav-link{color:black;} 
+/* .col.nav-link:hover{color:blue!important;} */
+/* main.h2{color: red!important;} */
+/* .nav-tabs{background-color: var(--bs-code-color)!important;} */
+
+.myActive a{background-color:violet; color:lightyellow!important;}
+/* main {margin-top:80px;} */
