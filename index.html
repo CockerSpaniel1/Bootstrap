@@ -15,6 +15,12 @@
 
     <script src="js/bootstrap.bundle.min.js"  ></script> 
 
+    <style>
+      iframe{width:100%; border:1px lightgrey solid;border-radius:8px;}
+      main .btn{width:100%;margin:8px auto; }
+      /* .btn-group{display:inline-block;} */
+
+    </style>
 
 </head>
 
@@ -56,8 +62,18 @@
                       <li><a class="dropdown-item" href="products.html#teaDrinks">Tea Drinks</a></li>
                     </ul>
                   </li>
-
+                  <li class="nav-item" >
+                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#registerModal">
+                      <a class="nav-link" href="#"> 註冊</a>
+                    </button>
+                  </li>
                 </ul>
+
+
+
+
                 <form class="d-flex" role="search" action="https://www.google.com/search?" >
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
                   <button class="btn btn-outline-success" type="submit">Search</button>
@@ -107,7 +123,50 @@
         </header>
 
         <main>
-          
+          <div class="container">
+            <div class="row">
+                <div class="col-3">
+
+                <form action="signup.html" target="signupok">
+
+                  <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label" >帳號</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="請輸入您的email">
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">密碼</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="pwd" name="pwd" placeholder="請輸入您的密碼">
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button type="submit" class="btn btn-primary" onclick="register()">註冊</button>
+                    </div>
+                    <div class="col">
+                      <button type="button" class="btn btn-primary" onclick="login()">登入</button>
+                    </div>
+                  </div>
+                  
+                  
+                 
+                </form>
+              </div>
+              <div class="col-6">
+                  <div id="login">登入</div>
+
+                  <div id="register">
+                    <h2>註冊</h2>
+                    <iframe name="signupok"  src="indexContent.html" ></iframe>
+                  </div>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
         </main>
 
 
@@ -140,6 +199,107 @@
     </footer>
         </div>
     </div>
+
+ <script>
+  document.getElementById("login").style.display = "none";
+
+
+ function login(){
+  document.getElementById("login").style.display = "block";
+  document.getElementById("register").style.display = "none";
+
+  var email=document.getElementById("email").value;
+  var pwd=document.getElementById("pwd").value;
+
+  if(email==="amy@gmail.com" && pwd==="1234"){
+    document.getElementById("login").innerHTML="登入成功<hr>帳號"+email+"<br>"+"密碼"+pwd+"<br>";
+  }else{
+    alert("帳號或密碼錯誤");
+    document.getElementById("login").innerHTML="請輸入正確的帳號密碼，若您不是本站會員，請按下「註冊鍵」進行註冊。";
+  }
+}
+//-----------------------------------------------------------
+  function login2(){
+  document.getElementById("login").style.display = "block";
+  document.getElementById("register").style.display = "none";
+
+  var email=document.getElementById("email2").value;
+  var pwd=document.getElementById("pwd2").value;
+
+  if(email==="amy@gmail.com" && pwd==="1234"){
+    document.getElementById("login").innerHTML="登入成功<hr>帳號"+email+"<br>"+"密碼"+pwd+"<br>";
+  }else{
+    alert("帳號或密碼錯誤");
+    document.getElementById("login").innerHTML="請輸入正確的帳號密碼，若您不是本站會員，請按下「註冊鍵」進行註冊。";
+  }
+  }
+
+  
+
+
+
+function register(){
+  document.getElementById("login").style.display = "none";
+  document.getElementById("register").style.display = "block";
+}
+
+
+</script>   
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">註冊會員</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        
+        <form action="signup.html" target="signupok">
+
+                  <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label" >帳號</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email2" name="email" placeholder="請輸入您的email">
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">密碼</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="pwd2" name="pwd" placeholder="請輸入您的密碼">
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button type="submit" class="btn btn-primary" onclick="register()">註冊</button>
+                    </div>
+                    <div class="col">
+                      <button type="button" class="btn btn-primary" onclick="login2()">登入</button>
+                    </div>
+                  </div>
+                  
+                  
+                 
+                </form>
+      </div>
+
+    
+
+    </div>
+  </div>
+</div>
 </body>
+
+
+
 
 </html>

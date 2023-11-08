@@ -15,7 +15,9 @@
 
     <script src="js/bootstrap.bundle.min.js"  ></script> 
 
-
+    <style>
+      main p::before,p::after{content:url(images/coffee/icon4.png)}
+    </style>
 </head>
 
 <body>
@@ -109,7 +111,83 @@
         </header>
 
         <main>
-        Product
+        
+
+        <div class="row">
+          <h2>BEAN</h2>
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    咖啡的栽培條件
+                  </button>
+                </h2>     
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="images/coffee/coffee03.jpg" style="float:left; width:25%; ;">
+                    <p><strong>咖啡是熱帶作物，由於咖啡樹生理特質的關係，全球能做為咖啡豆商業性栽培的地區是有限的，咖啡生長的區域大約是在南北迴歸線之間，緯度偏北或偏南都不適合栽種。</strong>
+                    氣候
+                    咖啡的栽培主要是受到溫度的限制，因為咖啡樹很容易受到霜害，種植區域以熱帶地區為宜，生育期間咖啡樹喜好溫暖，成熟與收穫則宜比較乾燥天氣。
+                    
+                    地形與海拔高度
+                    在熱帶地區栽種咖啡樹要特別注意海拔高度，越接近赤道越能在愈高海拔的山地栽種，如在海拔2,500公尺的高地也能種植。
+                    
+                    日照
+                    咖啡樹栽培對日照的要求並不高，太強的陽光直射對咖啡樹的生長會有不利的影響
+                    
+                    土壤
+                    咖啡栽培對土壤要求不苛求，但是栽培土質以富含有機質肥沃壤土及火山岩土壤為最適宜</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    咖啡豆的成分
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>咖啡因
+                    <strong>丹寧酸</strong>
+                    脂肪
+                    蛋白質
+                    糖
+                    纖維
+                    礦物質</p>
+                  <div></div>
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  咖啡豆的加工
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>去皮
+                    發酵
+                    乾燥烘焙
+                    淺焙
+                    中焙
+                    深焙</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <br><br><br><br>
+        <div class="container"><div class="row">
+          Drink
+          <button type="button" class="btn btn-primary" onclick="orderCup()">
+          目前訂購數量 <span class="badge text-bg-secondary" id="cup">0</span>杯
+        </button></div></div>
         </main>
 
 
@@ -143,5 +221,12 @@
         </div>
     </div>
 </body>
+<script>
+  var i=0;
+  function orderCup(){
+    document.getElementById("cup").innerHTML=i++
+  }
+
+</script>
 
 </html>
